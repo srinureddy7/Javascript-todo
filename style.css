@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(120deg,#65cdf6, #2d3bf8);
+    color: white;
+    font-family: "poppins",sans-serif;
+    min-height: 100vh;
+}
+header{
+    font-size: 2.5rem;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+form input,form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+
+}
+form button{
+    color: #14deec;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background: #14deec;
+    color: white;
+}
+.todo-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */ 
+}
+.todo-list{
+    min-width: 33%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+.todo li {
+    flex: 1;
+}
+.trash-btn,
+.complete-btn{
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.complete-btn{
+    background-color: #1ef516;
+}
+.todo-item{
+    padding: 0rem o.5rem;
+}
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+.completed{
+    text-decoration:line-through;
+    opacity: 0.2;;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
